@@ -27,6 +27,7 @@ section > div:not(.text-wrapper) {
   background-color: black;
   text-align: center;
   padding: 20px;
+  position: relative;
 }
 
 .text-wrapper {
@@ -58,3 +59,27 @@ section p { color: black; width: 70%; font-size: 1.25rem; }
 .beer-info { display: inline-block; vertical-align: top; padding: 30px; border: thin solid white; }
 
 p > span { display: block; padding-bottom: 12px; }
+
+.popover { 
+  display: none;
+  position: absolute;
+  top: 18%;
+  left: 110%;
+  background-color: orange;
+  width: 350px;
+  z-index: 1;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.show-popover { display: block; }
+
+.see-more { 
+  display: block; 
+  padding: 12px 18px; 
+  border-radius: 8px; 
+  color: white; 
+  background-color: salmon; 
+  margin-top: 8px;
+  cursor: pointer;
+}
